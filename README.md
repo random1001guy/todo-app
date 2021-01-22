@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 ## App is hosted live at [here](https://oranges-todo-app.netlify.app/).
-This todo-app project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This todo-app project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). It uses localStorage to store the user's todo list.
 
 ## Available Scripts
 
