@@ -9,16 +9,16 @@ const TodoList = ({ todos, setTodos, status }) => {
             <ul className="todo-list">
                 {todos.flatMap( (todo) => {
                     if(status === 'all')
-                        return <Todo key={todo.id} text={todo.text} todos={todos} setTodos={setTodos} todo={todo} />;
+                        return <Todo status={status} key={todo.id} text={todo.text} todos={todos} setTodos={setTodos} todo={todo} />;
                     else if(status === 'completed')
                         if(todo.completed){
-                            return <Todo key={todo.id} text={todo.text} todos={todos} setTodos={setTodos} todo={todo} />;
+                            return <Todo status={status} key={todo.id} text={todo.text} todos={todos} setTodos={setTodos} todo={todo} />;
                         }
                         else 
                             return [];
                     else 
                         if(!todo.completed){
-                            return <Todo key={todo.id} text={todo.text} todos={todos} setTodos={setTodos} todo={todo} />;
+                            return <Todo status={status} key={todo.id} text={todo.text} todos={todos} setTodos={setTodos} todo={todo} />;
                         }
                         else
                             return [];
